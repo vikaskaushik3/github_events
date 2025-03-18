@@ -8,8 +8,7 @@ on:
   push:
     branches:
       - main
-      - 'dev-*'  # dev-new, dev-01
-      - 'feat/**' # feat-latest, feat/dev/latest
+      - dev
     paths:
       - '.github/workflows/*'
 jobs:
