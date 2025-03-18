@@ -10,7 +10,7 @@ on:
       - main
       - 'dev-*'  # dev-new, dev-01
       - 'feat/**' # feat-latest, feat/dev/latest
-    paths-ignore:
+    paths:
       - '.github/workflows/*'
 jobs:
   deploy:
