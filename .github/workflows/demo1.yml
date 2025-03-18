@@ -5,7 +5,12 @@ on:
       - opened
       - edited
   workflow_dispatch:
-    
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
